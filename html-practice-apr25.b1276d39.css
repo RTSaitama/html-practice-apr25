@@ -10,6 +10,7 @@
   align-items: center;
   gap: 40px 30px;
   margin: 30px 55px;
+  padding: 30px;
   display: grid;
 }
 
@@ -23,7 +24,7 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 264px;
-  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, border-radius 1s ease-in-out, background-color .3s;
 }
 
 .people__card:hover {
@@ -34,41 +35,46 @@
   transform: scale(1.2);
 }
 
-.people__card:hover .photo {
+.people__card:hover .people__card-photo {
   box-sizing: border-box;
   z-index: 1;
-  padding: 12px;
-}
-
-.people__card:hover .photo img {
   border-radius: 60px;
+  padding: 12px;
+  transition: border-radius 1s ease-in-out;
+  overflow: hidden;
 }
 
-.people__card:hover .photo .rank {
+.people__card:hover .people__card-photo img {
+  border-radius: 60px;
+  transition: border-radius 1s ease-in-out;
+}
+
+.people__card:hover .people__card-photo .people__card-rank {
   right: 27px;
 }
 
-.people__card:hover .extra {
+.people__card:hover .people__card-extra {
   display: block;
 }
 
-.photo {
+.people__card-photo {
   width: 200px;
   height: 200px;
   margin-bottom: 8px;
   position: relative;
 }
 
-.photo img {
+.people__card-photo img {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
+  transition: border-radius 1s ease-in-out;
   display: flex;
 }
 
-.rank {
+.people__card-rank {
   color: #8b0000;
   background-color: #fff;
   border-radius: 50%;
@@ -85,21 +91,21 @@
   transform: translateY(-50%);
 }
 
-.name {
+.people__card-name {
   color: #2f4f4f;
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 700;
 }
 
-.extra {
+.people__card-extra {
   color: #000;
   font-size: 21.6px;
   font-weight: 400;
   display: none;
 }
 
-.pay:before {
+.people__card-pay:before {
   content: "$";
 }
 /*# sourceMappingURL=html-practice-apr25.b1276d39.css.map */
