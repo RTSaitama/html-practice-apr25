@@ -32,7 +32,7 @@
     position: relative;
     background-color: #EEEEEE;
     border-radius: 12px;
-    .photo{
+    .people__card-photo{
       box-sizing: border-box;
       z-index: 1;
       padding: 12px;
@@ -41,16 +41,16 @@
 
         border-radius: 60px;
       }
-      .rank{
+      .people__card-rank{
         right: 27px;
       }
     }
-   .extra{
+   .people__card-extra{
     display: block;
    }
  }
 }
-.photo {
+.people__card-photo {
   width: 200px;
   height: 200px;
   position: relative;
@@ -64,7 +64,7 @@
     border-radius: 50%;
   }
 }
-.rank {
+.people__card-rank {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,20 +82,20 @@
   font-size: 16px;
 }
 
-.name {
+.people__card-name {
   font-size: 24px;
   font-weight: 700;
   color: #2F4F4F;
   margin-bottom: 10px;
 }
-.extra {
+.people__card-extra {
   display: none;
   font-size: 21.6px;
   color: #000;
   font-weight: 400;
 }
  
-.pay {
+.people__card-pay {
   &::before{
     content: '$';
   }
